@@ -88,5 +88,5 @@ app.get("/skin/:image_name", (req, res) => {
 });
 
 app.listen(6001, () => {
-    console.log(`Server is running on http://${host}:${port}`);
+    console.log(`Server is running, you can use your server ip + port (default 6001) to visit this service`);
 });
