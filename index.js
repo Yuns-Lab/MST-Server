@@ -9,9 +9,6 @@ const cors = require("cors");
 
 const app = express();
 
-const host = "localhost" // 修改这里为你服务器的 IP 或域名
-const port = 6001;       // 修改这里为你 Docker 所开放的端口
-
 app.use(cors());
 
 app.use(express.json());
@@ -66,7 +63,7 @@ app.post("/addSkin", upload.single("image"), (req, res) => {
             console.error("Error saving file:", err);
             return res.status(500).send("Internal Server Error");
         }
-        res.status(200).json({ url: `http:/${host}:${port}/skin/${imgName}` });
+        res.status(200).json({ url: `skin/${imgName}` });
     });
 });
 
