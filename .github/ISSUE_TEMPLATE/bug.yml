@@ -1,0 +1,38 @@
+name: Bug 反馈
+description: 向我们反馈你遇到的意外问题
+labels: [· Bug, 新反馈]
+projects: Yuns-Lab/1
+body:
+- type: checkboxes
+  id: "yml-1"
+  attributes:
+    label: "检查项"
+    description: "请逐个检查下列项目，并勾选确认。"
+    options:
+    - label: "我已在 [Issues 页面](https://github.com/Yuns-Lab/MST-Server/issues?q=is%3Aissue+) 中搜索，确认了这一 Bug 未被提交过。"
+      required: true
+- type: textarea
+  id: "yml-2"
+  attributes:
+    label: 描述
+    description: "详细描述该 Bug 的具体表现。"
+  validations:
+    required: true
+- type: textarea
+  id: "yml-3"
+  attributes:
+    label: 重现步骤
+    description: "详细描述要怎么操作才能再次触发这个 Bug。"
+    value: |
+      1. 点击xxxx
+      2. 往下滚，然后点击xxxx
+  validations:
+    required: true
+- type: textarea
+  id: "yml-4"
+  attributes:
+    label: 附件
+    description: "上传 Bug 截图或者报错信息"
+    placeholder: "报错信息请放在多行代码块中：使用 ``` 开头和结尾（单独一行）来创建"
+  validations:
+    required: true
