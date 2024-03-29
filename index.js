@@ -44,7 +44,7 @@ function deleteFilesWithPrefix(prefix) {
 }
 
 app.get("/", (req, res) => {
-    res.status(200).send("Welcome");
+    res.status(418).send("I'm a teapot");
 });
 
 app.post("/addSkin", upload.single("image"), (req, res) => {
