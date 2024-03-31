@@ -40,4 +40,4 @@ docker run -p [your_port]:6001 -it mst-server
 Server is running, you can use your server ip + port (default 6001) tovisit this service
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用你的服务器 ip + 端口 6001 访问即可，你应当会看到 Welcome 字样
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用你的服务器 ip + 端口 6001（或者你配置的 Docker 映射端口）访问即可，你应当会看到 Welcome 字样
